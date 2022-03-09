@@ -1,0 +1,193 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* custom styles */
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'Fredoka', sans-serif;
+  line-height: 1.2;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.mt{
+  margin-top: 2rem;
+}
+
+.app{
+  position: relative
+}
+
+.flex{
+  display: flex;
+}
+
+.justify-bt{
+  justify-content: space-between;
+}
+
+.justify-ct{
+  justify-content: center;
+}
+
+
+.align-ct{
+  align-items: center;
+}
+
+.col{
+  flex-direction: column;
+}
+
+.row-1-2{
+  height: 50vh;
+  background-color: #e0dddd;
+}
+
+.row-2-2{
+  height: 50vh;
+  background-color: #eff4ff;
+}
+
+.card{
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  height: 60%;
+  border-radius: 4px;
+  box-shadow: 4px 4px 10px 0 rgb(204, 202, 202),
+              -4px -4px 10px 0 rgb(204, 202, 202);
+  z-index: 999;
+}
+
+.card-header{
+  background-color: #eff4ff;
+  width: 100%;
+  height: 30%;
+  border-bottom: 2px solid gray;
+}
+
+.profile-pic{
+  position: relative;
+}
+
+.profile-pic img{
+  position: absolute;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 2px 2px 10px 0 rgb(202, 200, 200), 
+              -2px -2px 10px 0 rgb(202, 200, 200);
+  left: 250px;
+  bottom: -50px;
+  object-fit: cover;
+}
+
+.card-body{
+  background-color: #fff;
+  height: 70%;
+}
+
+.name{
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.text{
+  font-size: 1rem;
+}
+
+.details{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.icons{
+  padding: 0 2rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
+
+.icons i{
+  color: #607f85;
+  padding: 1rem 2rem;
+}
+
+.random-btn{
+  background-color: #4383aa;
+  color: #fff;
+  border: 0;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+}
+
+.center{
+  text-align: center;
+}
